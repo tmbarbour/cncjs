@@ -160,7 +160,7 @@ class Keypad extends PureComponent {
         return (
             <div className={styles.keypad}>
                 <div className="row no-gutters">
-                    <div className="col-xs-8">
+                    <div className="col-xs-7">
                         <div className={styles.rowSpace}>
                             <div className="row no-gutters">
                                 <div className="col-xs-3">
@@ -218,7 +218,7 @@ class Keypad extends PureComponent {
                                         </Button>
                                     </div>
                                 </div>
-                                <div className="col-xs-3">
+                                <div className="col-xs-2 col-xs-offset-1">
                                     <div className={styles.colSpace}>
                                         <Button
                                             btnStyle="flat"
@@ -302,7 +302,9 @@ class Keypad extends PureComponent {
                                         </Button>
                                     </div>
                                 </div>
-                                <div className="col-xs-3">
+                                <div className="col-xs-1">
+                                </div>
+                                <div className="col-xs-2">
                                     <div className={styles.colSpace}>
                                         <Button
                                             btnStyle="flat"
@@ -376,7 +378,7 @@ class Keypad extends PureComponent {
                                         </Button>
                                     </div>
                                 </div>
-                                <div className="col-xs-3">
+                                <div className="col-xs-2 col-xs-offset-1">
                                     <div className={styles.colSpace}>
                                         <Button
                                             btnStyle="flat"
@@ -400,7 +402,7 @@ class Keypad extends PureComponent {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xs-4">
+                    <div className="col-xs-4 col-xs-offset-1">
                         <div className={styles.rowSpace}>
                             <Dropdown
                                 pullRight
@@ -521,7 +523,7 @@ class Keypad extends PureComponent {
                                 <div className="col-xs-6">
                                     <Repeatable
                                         disabled={!canStepBackward}
-                                        style={{ marginRight: 2.5 }}
+                                        style={{ marginRight: 4.5 }}
                                         repeatDelay={500}
                                         repeatInterval={Math.floor(1000 / 15)}
                                         onHold={actions.stepBackward}
@@ -529,7 +531,7 @@ class Keypad extends PureComponent {
                                     >
                                         <Button
                                             disabled={!canStepBackward}
-                                            style={{ width: '100%' }}
+                                            style={{ width: '100%', minWidth: '30px' }}
                                             compact
                                             btnStyle="flat"
                                             className="pull-left"
@@ -549,7 +551,7 @@ class Keypad extends PureComponent {
                                     >
                                         <Button
                                             disabled={!canStepForward}
-                                            style={{ width: '100%' }}
+                                            style={{ width: '100%', minWidth: '30px' }}
                                             compact
                                             btnStyle="flat"
                                             className="pull-right"
