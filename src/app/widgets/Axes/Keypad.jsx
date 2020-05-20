@@ -187,6 +187,7 @@ class Keypad extends PureComponent {
                                             compact
                                             className={cx(
                                                 styles.btnKeypad,
+                                                styles.btnY,
                                                 { [styles.highlight]: highlightY }
                                             )}
                                             onClick={() => {
@@ -225,6 +226,7 @@ class Keypad extends PureComponent {
                                             compact
                                             className={cx(
                                                 styles.btnKeypad,
+                                                styles.btnZ,
                                                 { [styles.highlight]: highlightZ }
                                             )}
                                             onClick={() => {
@@ -250,6 +252,7 @@ class Keypad extends PureComponent {
                                             compact
                                             className={cx(
                                                 styles.btnKeypad,
+                                                styles.btnX,
                                                 { [styles.highlight]: highlightX }
                                             )}
                                             onClick={() => {
@@ -288,6 +291,7 @@ class Keypad extends PureComponent {
                                             compact
                                             className={cx(
                                                 styles.btnKeypad,
+                                                styles.btnX,
                                                 { [styles.highlight]: highlightX }
                                             )}
                                             onClick={() => {
@@ -309,7 +313,8 @@ class Keypad extends PureComponent {
                                         <Button
                                             btnStyle="flat"
                                             compact
-                                            className={styles.btnKeypad}
+                                            className={cx(styles.btnKeypad,
+                                                styles.btnZ)}
                                             onClick={() => actions.move({ Z: 0 })}
                                             disabled={!canClickZ}
                                             title={i18n._('Move To Z Zero (G0 Z0)')}
@@ -347,6 +352,7 @@ class Keypad extends PureComponent {
                                             compact
                                             className={cx(
                                                 styles.btnKeypad,
+                                                styles.btnY,
                                                 { [styles.highlight]: highlightY }
                                             )}
                                             onClick={() => {
@@ -385,6 +391,7 @@ class Keypad extends PureComponent {
                                             compact
                                             className={cx(
                                                 styles.btnKeypad,
+                                                styles.btnZ,
                                                 { [styles.highlight]: highlightZ }
                                             )}
                                             onClick={() => {
